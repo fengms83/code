@@ -1,0 +1,4 @@
+rm -rf `ls -aR|egrep -v '(make|*.c|.|..)'`
+output=main.a
+gcc -o ${output} ex3_1.c
+./${output}
