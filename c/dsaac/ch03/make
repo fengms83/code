@@ -1,4 +1,6 @@
-rm -rf `ls -aR|egrep -v '(make|*.c|.|..)'`
+rm -rf `ls -aR|egrep -v '(make|*.c|*.h|.|..)'`
+rm -rf *.stackdump
+
 output=main.a
-gcc -o ${output} ex3_1.c
+gcc -o ${output} utils.c list.c ex3_1.c
 ./${output}
