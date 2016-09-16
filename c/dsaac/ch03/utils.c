@@ -1,10 +1,11 @@
 #include <assert.h>
 #include "list.h"
 
+typedef int BOOL;
 #define TRUE  1
 #define FALSE 0
 
-int is_equal(List* head, int* array, int len)
+BOOL is_equal(List* head, int* array, int len)
 {
 	int i = 0;
 
@@ -15,9 +16,14 @@ int is_equal(List* head, int* array, int len)
 		if (array[i] != head->value)
 			return FALSE;
 
+		i++;
+		head = head->next;
 	}
 
-	return 0;
+	if ((i < len) || (head->next != NULL))
+		return FALSE;
+
+	return TRUE;
 }
 
 void test_is_equal(void)
