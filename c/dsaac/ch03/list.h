@@ -5,18 +5,18 @@ struct list;
 /*
  * 定义单向链表
  */
-typedef struct
+struct list
 {
 	int value;
 	struct list *next;
-}List;
+};
 
 /*
  * 定义双向链表
  */
-typedef struct
+struct bi_list
 {
 	int value;
 	struct list *pre;
 	struct list *next;
-}BiList;
+};

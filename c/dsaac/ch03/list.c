@@ -1,11 +1,11 @@
 #include "list.h"
 
-List* make_list(int *input, int len)
+struct list* make_list(int *input, int len)
 {
 	return NULL;
 }
 
-BiList* make_bi_list(int *input, int len)
+struct bi_list* make_bi_list(int *input, int len)
 {
 	return NULL;
 }
