@@ -3,6 +3,7 @@
 #include "list.h"
 
 extern void test_is_equal(void);
+extern void testcases(void);
 
 int main()
 {
