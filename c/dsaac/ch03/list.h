@@ -27,3 +27,5 @@ struct list* make_reverse_list(int* input, int len);
 
 struct bi_list* make_bi_list(int* input, int len);
 struct bi_list* make_reverse_bi_list(int* input, int len);
+
+void show_list(struct list* head);

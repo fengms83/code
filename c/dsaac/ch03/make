@@ -1,6 +1,11 @@
 rm -rf `ls -aR|egrep -v '(make|*.c|*.h|.|..)'`
 rm -rf *.stackdump
 
-output=main.a
-gcc -o ${output} utils.c list.c test_cases.c ex3_1.c
+output=test_cases.a
+gcc -o ${output} utils.c list.c test_cases.c
 ./${output}
+
+output=ex3_1.a
+gcc -o ${output} utils.c list.c ex3_1.c
+./${output}
+

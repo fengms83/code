@@ -1,4 +1,5 @@
 #include "list.h"
+#include <stdio.h>
 
 struct list* make_list(int *input, int len)
 {
@@ -40,4 +41,16 @@ struct bi_list* make_bi_list(int *input, int len)
 struct bi_list* make_reverse_bi_list(int *input, int len)
 {
 	return NULL;
+}
+
+void show_list(struct list* head)
+{
+	struct list* p = head;
+	while(p->next)
+	{
+		p = p->next;
+		printf("%d ", p->value);
+	}
+
+	printf("\n");
 }
