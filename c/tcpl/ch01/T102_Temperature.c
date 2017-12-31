@@ -30,6 +30,7 @@ void test_cases()
 	assert(137 == trans(280));
 	assert(148 == trans(300));
 }
+
 int main()
 {
 	printf("Testing >>> %-30s ...\n", __FILE__);
