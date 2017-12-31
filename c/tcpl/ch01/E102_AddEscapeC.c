@@ -4,7 +4,8 @@ int main()
 {
 	printf("Testing >>> %-30s ...\n", __FILE__);
 	
-	printf("Hello World!\n");
+	/* E102_AddEscapeC.c:6: warning: unknown escape sequence: '\c' */
+	printf("Hello World!\c\n");
 	
 	printf("Tested >>> %-30s Succeed!\n", __FILE__);
 	

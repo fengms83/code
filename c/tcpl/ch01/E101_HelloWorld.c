@@ -7,6 +7,5 @@ int main()
 	printf("Hello World!\n");
 	
 	printf("Tested >>> %-30s Succeed!\n", __FILE__);
-	
 	return 0;
 }
