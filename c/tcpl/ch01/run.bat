@@ -5,5 +5,5 @@ tcc -run E101_HelloWorld.c
 tcc -run E102_AddEscapeC.c
 
 tcc -run T102_Temperature.c
-
-pause
+tcc -run E103_Temperature.c
+tcc -run E104_Temperature2.c
