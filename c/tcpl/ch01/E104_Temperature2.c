@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-#define EPSILON 1e-2
+#define EPSILON (1e-2)
 
 float trans(float celsius)
 {

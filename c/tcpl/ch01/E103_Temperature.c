@@ -11,7 +11,9 @@ int main()
 	int step;
 	
 	printf("Testing >>> %-30s ...\n", __FILE__);
-	
+	printf("----------------------------------\n");
+	printf("  fahr\t\tcelsius\n");
+	printf("----------------------------------\n");
 	lower = 0;
 	upper = 300;
 	step = 20;
